@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(164, 232, 234);
+  font-family: Impact, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.bg {
+  background: white;
+  color: black;
+  padding: 0.5rem;
+}
+
+.bg h1 {
+  font-size: 1rem;
+}
+
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+header,
+section,
+footer {
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  min-height: 75vh;
+  scroll-margin-top: 5rem;
+}
+
+section:first-child,
+header {
+  background-color: rgb(67, 240, 217);
+}
+
+section:nth-child(2) {
+  background-color: rgb(66, 198, 246);
+}
+
+section:last-child {
+  background-color: rgb(17, 69, 100);
+}
+
+footer {
+  background-color: black;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 0.5rem 1rem;
+  background-color: whitesmoke;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* overlay modal */
+
+.overlay {
+  background-color: rgba(51, 51, 51, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.overlay.visible {
+  display: flex;
+}
+
+.modal {
+  background-color: white;
+  color: #333;
+  height: 50vh;
+  width: 75vw;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+}
+
+.modal button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* mobile settings */
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  ul.responsive {
+    display: block;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+  }
+
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
+  }
+
+  header.bg.mobile {
+    color: black;
+  }
+} ;
