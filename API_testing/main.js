@@ -39,12 +39,8 @@ console.log('Hello')
 
        const dataList = (data)=> {
         document.querySelector('.data').innerHTML=
-        data.map(item=>{return `<li>${item.name}</li>`}).join('')
-        
-        document.querySelector('.phone').innerHTML=
-        data.map(item=>{return `<li>${item.phone}</li>`}).join('')
+        data.map(item=>{return `<li>${item.name}-${item.phone} <a href="mailto:${item.email}">Send email</a></li>`}).join('')
 
-        
        }
 
        
