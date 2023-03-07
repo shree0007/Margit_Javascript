@@ -53,13 +53,4 @@ console.log('Hello')
 
 
 
-    //    function user (data){
-    //   data.forEach(element => {
-    //         console.log(element.name)
-    //         const list=document.createElement('li')
-    //         list.textContent=element.name
-    //         namelist.appendChild(list)
-    //     });
-
-    //    }
 
