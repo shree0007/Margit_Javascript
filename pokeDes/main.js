@@ -34,7 +34,7 @@
 
 const datalist = (data) => {
     document.querySelector('#pokemons').innerHTML = data.map((item,i) =>{
-        return `<div class = 'card'>
+        return `<div class = 'cards'>
         <img src="${item.sprites.other.dream_world.front_default}"/>
         <p>${item.name}</p></div>`
     }).join('')
